@@ -7,7 +7,7 @@ from home.models import Question
 # Create your views here.
 
 def home(request):
-    return HttpResponse("hello")
+    return HttpResponse(request, 'home.html')
 
 
 def get_quiz(request):
